@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "aeonik";
+        font-weight: 400;
+        src: url("/public/fonts/Aeonik/AeonikTRIAL-Light.otf") format(opentype);
+    }
+    @font-face {
+        font-family: "aeonik";
+        font-weight: 500;
+        src: url("/public/fonts/Aeonik/AeonikTRIAL-Regular.otf") format(opentype);
+    }
+    @font-face {
+        font-family: "aeonik";
+        font-weight: 600;
+        src: url("/public/fonts/Aeonik/AeonikTRIAL-Bold.otf") format(opentype);
+    }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

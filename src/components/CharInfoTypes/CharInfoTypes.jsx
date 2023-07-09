@@ -1,6 +1,4 @@
-import React from 'react';
-
-const CharTypes = ({types}) => {
+const CharInfoTypes = ({types}) => {
     if (!types) return null
 
     const colors = {
@@ -25,10 +23,10 @@ const CharTypes = ({types}) => {
     };
 
     return (
-        <div className="flex flex-col gap-1 text-sm lg:text-xl">
+        <div className="flex gap-1 text-xl lg:text-2xl">
             {types.map(type => (
                 <span
-                    className="rounded-full px-3 py-1 lg:text-xl lg:px-8 lg:py-1 lg:w-20 mx-auto bg-white border border-solid border-black w-16 grid place-content-center capitalize lg:group-hover:border-r-2 lg:group-hover:border-b-[3px] lg:group-hover:border-black lg:group-hover:rounded-3xl transition-all ease-linear"
+                    className="md:text-2xl rounded-full px-12 py-1 mx-auto bg-white border border-solid border-black w-16 grid place-content-center capitalize group-hover:border-r-2 group-hover:border-b-[3px] group-hover:border-black group-hover:rounded-3xl delay-75"
                     style={{backgroundColor: colors[type]}}
                     key={type}
                 >
@@ -40,4 +38,4 @@ const CharTypes = ({types}) => {
     );
 };
 
-export default CharTypes;
+export default CharInfoTypes;

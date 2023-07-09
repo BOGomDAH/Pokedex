@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        main: ['aeonik']
+      },
+      screens: {
+        'lg': '1191px',
+      },
       backgroundColor: {
         'background': '#fefef6', // Replace with your custom color code
         'yellow': '#FFF1BB',
