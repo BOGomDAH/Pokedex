@@ -24,6 +24,7 @@ const CharInfo = ({charId, openAnimationRef, handleDetailAnimation}) => {
 
         getCharacter(charId)
             .then(onCharLoaded)
+            .catch(r => console.log(r))
     }
 
     useEffect(() => {
